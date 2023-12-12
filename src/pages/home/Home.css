@@ -1,0 +1,13 @@
+.hero_image {
+  max-width: 30%;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home_hero_section {
+  display: flex;
+  justify-content: space-around;
+}

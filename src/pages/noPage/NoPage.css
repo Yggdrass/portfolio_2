@@ -1,0 +1,37 @@
+.main_noPage {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.noPage_title,
+.lama_container {
+  color: white;
+}
+
+.lama_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.lama_container img {
+  max-width: 25%;
+}
+
+.lama_container_Link {
+  background-color: lime;
+  padding: 1rem;
+  border: 3px solid white;
+  border-radius: 50px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 10px 10px 10px solid white;
+}
