@@ -9,6 +9,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .Link:hover {
@@ -27,7 +28,7 @@
   display: none;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 300px), (max-width: 989px) {
   .MobileNavigation {
     display: flex;
   }
@@ -60,8 +61,18 @@
     color: var(--primary);
   }
 }
+
 @media (min-width: 990px) {
   .MobileNavigation {
     display: none;
+  }
+
+  .Navigation {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .Link {
+    color: var(--black);
   }
 }
