@@ -2,12 +2,24 @@
   max-width: 30%;
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-}
-
 .home_hero_section {
   display: flex;
   justify-content: space-around;
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--primary) 20%,
+    var(--light_blue) 100%
+  );
+}
+
+.welcome_title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.welcome_text {
+  font-size: 1.7rem;
+  max-width: 40ch;
+  line-height: 2.8rem;
 }

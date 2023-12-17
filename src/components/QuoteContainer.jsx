@@ -1,3 +1,5 @@
+import "../css/Containers.css";
+
 const QuoteContainer = () => {
   return (
     <div className="quote_container">

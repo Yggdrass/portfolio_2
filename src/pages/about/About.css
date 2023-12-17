@@ -1,0 +1,35 @@
+.aboutme_subheading {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.aboutme_hero_section {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--primary) 10%,
+    var(--light_blue) 100%
+  );
+}
+
+.aboutme_title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.aboutme_hero_text {
+  font-size: 1.7rem;
+  max-width: 40ch;
+  line-height: 2.8rem;
+}
+
+.aboutme_section p {
+  max-width: 40ch;
+  font-size: 2rem;
+}
+
+.aboutme_section {
+  margin-left: 10rem;
+}

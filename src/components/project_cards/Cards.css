@@ -1,0 +1,111 @@
+.card_logo {
+  max-width: 5%;
+}
+
+.card_title {
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.card_header_1,
+.card_header_2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.holidaze_card_header {
+  background-image: url("../../assets/holidaze/holidaze_background.png");
+}
+
+.shophub_card_header {
+  background-color: var(--shophub_primary);
+}
+
+.auctions_card_header {
+  background-color: var(--artauctions_primary);
+}
+
+.project_thumbnail {
+  width: clamp(100px, 50%, 700px);
+  height: 100%;
+}
+
+.project_preview_1,
+.project_preview_2 {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.project_preview_1 p,
+.project_preview_2 p {
+  max-width: 40ch;
+  line-height: 2.7rem;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+.project_preview_1,
+.card_header_1 {
+  padding-left: 2%;
+}
+
+.project_preview_1,
+.project_header_1 {
+  justify-content: left;
+}
+
+.project_preview_2,
+.card_header_2 {
+  padding-right: 2%;
+}
+
+.project_preview_2,
+.card_header_2 {
+  justify-content: right;
+}
+
+.project_card_1,
+.project_card_2 {
+  display: inherit;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 100vw;
+}
+
+.card_background_1 {
+  background-image: linear-gradient(
+    90deg,
+    var(--secondary) 0%,
+    var(--secondary) 35%,
+    var(--primary) 100%
+  );
+}
+
+.card_background_2 {
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--secondary) 65%,
+    var(--secondary) 100%
+  );
+}
+
+.view_project_link {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--success);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  color: var(--black);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}

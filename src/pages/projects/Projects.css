@@ -1,0 +1,100 @@
+.project_image {
+  max-width: 50%;
+}
+
+.project_description {
+  font-size: 2rem;
+  max-width: 40ch;
+}
+
+.project_info_section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.holidaze_title {
+  background-image: url("../../assets/holidaze/holidaze_background.png");
+}
+
+.art_auctions_title {
+  background-color: var(--black);
+  color: var(--primary);
+  min-width: 100vw;
+}
+
+.shophub_title {
+  background-color: var(--pink);
+  color: var(--black);
+  min-width: 100vw;
+}
+
+.holidaze_page_section_1 {
+  background-image: linear-gradient(
+    90deg,
+    var(--holidaze_primary) 0%,
+    var(--holidaze_primary) 35%,
+    var(--primary) 100%
+  );
+}
+
+.holidaze_page_section_2 {
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--holidaze_primary) 65%,
+    var(--holidaze_primary) 100%
+  );
+}
+
+.shophub_page_section_1 {
+  background-image: linear-gradient(
+    90deg,
+    var(--shophub_primary) 0%,
+    var(--shophub_primary) 35%,
+    var(--primary) 100%
+  );
+}
+
+.shophub_page_section_2 {
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--shophub_primary) 65%,
+    var(--shophub_primary) 100%
+  );
+}
+
+.artAuctions_page_section_1 {
+  background-image: linear-gradient(
+    90deg,
+    var(--artauctions_primary) 0%,
+    var(--artauctions_primary) 35%,
+    var(--primary) 100%
+  );
+}
+
+.artAuctions_page_section_2 {
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--artauctions_primary) 65%,
+    var(--artauctions_primary) 100%
+  );
+}
+
+.project_brief {
+  display: flex;
+  justify-content: center;
+  max-width: 50rem;
+  margin: 0 auto;
+  gap: 5rem;
+  align-items: flex-start;
+  font-size: 1.2rem;
+}
+
+.project_hero_section {
+  max-width: 100vw;
+}

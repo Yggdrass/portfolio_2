@@ -1,0 +1,15 @@
+:root {
+  --warning: rgb(219, 25, 0);
+  --primary: rgb(255, 255, 255);
+  --primary-transparent: rgba(255, 255, 255, 0.75);
+  --black: rgb(0, 0, 0);
+  --dividing_line_1: rgb(151, 151, 151);
+  --dividing_line_2: rgb(218, 218, 218);
+  --success: rgb(24, 224, 67);
+  --secondary: rgb(228, 228, 228);
+  --tertiary: rgb(207, 207, 207);
+  --holidaze_primary: rgb(255, 142, 199);
+  --shophub_primary: rgb(255, 192, 203);
+  --artauctions_primary: rgb(349, 131, 235);
+  --light_blue: rgb(90, 174, 253);
+}
