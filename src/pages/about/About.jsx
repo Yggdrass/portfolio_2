@@ -2,6 +2,7 @@ import Header from "../../components/layout/Header";
 import profile_image from "../../assets/ar_profile_img.jpg";
 import "./About.css";
 import DividingLineTop from "../../components/layout/DividingLineTop";
+import Footer from "../../components/layout/Footer";
 
 const About = () => {
   return (
@@ -50,6 +51,7 @@ const About = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

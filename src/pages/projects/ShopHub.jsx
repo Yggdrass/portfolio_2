@@ -7,6 +7,8 @@ import ShophubCheckoutPage from "../../assets/shophub/shophub_checkoutpage.png";
 import ShophubContactPage from "../../assets/shophub/shophub_contact.png";
 import DividingLineTop from "../../components/layout/DividingLineTop";
 import DividingLineSection from "../../components/layout/DividingLineSection";
+import "./Projects.css";
+import Footer from "../../components/layout/Footer";
 
 const ShopHub = () => {
   return (
@@ -136,6 +138,7 @@ const ShopHub = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

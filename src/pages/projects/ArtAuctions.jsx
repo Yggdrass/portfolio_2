@@ -5,6 +5,7 @@ import ArtAuctionsProfile_1 from "../../assets/art_auctions/profile_page_1.png";
 import ArtAuctionsProfile_2 from "../../assets/art_auctions/profile_page_2.png";
 import DividingLineTop from "../../components/layout/DividingLineTop";
 import DividingLineSection from "../../components/layout/DividingLineSection";
+import Footer from "../../components/layout/Footer";
 
 const ArtAuctions = () => {
   return (
@@ -80,6 +81,7 @@ const ArtAuctions = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

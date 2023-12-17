@@ -11,6 +11,7 @@ const ShopHubCard = () => {
         <h2 className="card_title">ShopHub</h2>
       </div>
       <div className="project_preview_2">
+        <img src={HolidazeProjectImage} alt="" className="project_thumbnail" />
         <div>
           <p>
             This was the Javascript Frameworks CA. An Ecom website where users
@@ -22,7 +23,6 @@ const ShopHubCard = () => {
             view project
           </Link>
         </div>
-        <img src={HolidazeProjectImage} alt="" className="project_thumbnail" />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import ArtAuctionsCard from "../../components/project_cards/ArtAuctionsCard";
 import Header from "../../components/layout/Header";
 import DividingLineSection from "../../components/layout/DividingLineSection";
 import DividingLineTop from "../../components/layout/DividingLineTop";
+import Footer from "../../components/layout/Footer";
 
 const Projects = () => {
   return (
@@ -26,6 +27,8 @@ const Projects = () => {
           <ArtAuctionsCard />
         </div>
       </main>
+
+      <Footer />
     </>
   );
 };

@@ -12,8 +12,9 @@ header {
   left: 0;
 }
 
-header img {
-  max-width: 3%;
+header img,
+footer img {
+  width: clamp(70px, 2vw, 100px);
 }
 
 .dividing_line_1,
@@ -29,4 +30,17 @@ header img {
 
 .dividing_line_2 {
   border-top: 2px solid var(--dividing_line_2);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--light_blue);
+}
+
+@media (min-width: 1080px) {
+  footer {
+    flex-direction: row;
+  }
 }
