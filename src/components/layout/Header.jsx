@@ -1,13 +1,11 @@
 import Navlinks from "../navigation/Navlinks";
-import "./layout.css";
+import logo from "../../assets/ar_logo.png";
+import "./Layout.css";
 
 const Header = () => {
   return (
     <header>
-      <img
-        src="../../../public/ar_logo.png"
-        alt="logo of letters A & R put together"
-      />
+      <img src={logo} alt="logo of letters A & R put together" />
       <Navlinks />
     </header>
   );

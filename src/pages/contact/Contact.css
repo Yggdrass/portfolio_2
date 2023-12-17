@@ -1,0 +1,35 @@
+.contactme_hero_section {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--primary) 10%,
+    var(--success) 100%
+  );
+}
+
+.contactme_title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.acontactme_hero_text {
+  font-size: 1.7rem;
+  max-width: 40ch;
+  line-height: 2.8rem;
+}
+
+.contactme_section p {
+  max-width: 50ch;
+  font-size: 2rem;
+}
+
+.contactme_section {
+  margin-left: 10rem;
+}
+
+.contactme_subheading {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
