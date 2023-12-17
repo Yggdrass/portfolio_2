@@ -1,71 +1,72 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PORTFOLIO 2
 
-## Available Scripts
+<img src="holidaze_promo_img.png" width="1280"/>
 
-In the project directory, you can run:
+A website that users can search through venues and create a booking at a them. A venue manager can create venues, update and delete them. They can also see the bookings of each venue. A venue manager can only update or delete the venue they created, otherwise they will be shown a message at the top of the venue that they do not have permission to do this. Only users/venue managers with a @stud.noroff.no email can successfully register and login.
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The user needs to register with a @stud.noroff.no email, in order to login and use the website. When registering the user can choose to be a venue manager or not by ticking the selection box in the register form. This role can be changed in the profile page later on also.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+When logged in the user can view a list of venues in the venues page. Here they can also search through the list by title and choose which venue they want to click on.
 
-### `npm test`
+Once a venue card is clicked on, they are taken to a page where they can view details on that specific venue. At the top the user can only see a booking button. The venue manager will either see the delete and update venue button, or a text saying that they are not the owner of that venue. I have set it up so you need to be the owner of that venue in order to view and use those buttons.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Further down the user can view a calendar and the avaliable dates to book. I have not made this work, so I made it possible to view the bookings for the venue and the calendar. I have written more about this in the issues part of this README.md.
 
-### `npm run build`
+On the profile page the user can view their avatar, name, email and if they are a venue manager or not. Below this the user can update their avatar or change their role to venue manager. If the user is already a venue manager they will also see a create venue button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Below those buttons, the user can view a list of their bookings, and venue managers can also view a list of their created venues. Each card, be it booking or venue, will take the user to a page which will display details on that specifin venue or booking.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I started the project by setting up a plan for what parts of the website that was needed. Then I plotted them into a Trello board. This way I could plan out the time needed to complete each part and space the work out evenly over the period of the Exam.
+I started first to create a style guide in adobe XD so I could get a general idea of what elements of colour, icons etc that I wanted to use. My idea behind this venue booking site, was a website for "princesses" of all agaes and genders. Therefore I went with the pink and purple colours as well as the royal-like looking background images. I wanted to meet the feeling of exclusive and royal for the user.
 
-### `npm run eject`
+After the style guide I created the project prototype, so I could give the customer a feeling of how it would feel like on all platforms like desktop, iPad and phone. The final design might change after this part of the process, but it is mostly for the customer to get a general feel for the website before creation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+When I started to work on the website it self, I wanted to test out working with React in Vite. We have previously worked with create-react-app but I felt there were alot of lag, so I wanted to test out how Vite would feel and work in comparison. I used elements from Bootstrap for the forms and modals. Otherwise I used mostly React and buildt things by hand. The Calender was from Ant design, a website I have never worked with before and it was hard to understand how to use their componants.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To design the look of the components, I opted to use module.css. I used a few css-files in a css folder and one for each page that also was connected to the components within that page. In the main css folder I put files that handle the buttons, modals etc, so files with alot of classNames that are of the same group. In each page folder I kept a css.module per page that also contains aspects of classes for the components within that page.
+I also set up a storage folder that kept consts regarding the accesstoken and profile, and also handling of the localstorage.
+I moved the components into a components folder and structurized them into other folders inside of that.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Issues
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I had alot of trouble building the calendar and making iot possible to set the dates from the venues booking, so the user can see the avaliable booking dates. I tried to get the dateFrom and dateTo from the bookings, set them in a range function and then match themup with the calendars dates, and then the dates that match would be disabled. I only managed to show the bookings with dates on the venue details page and disable dates prior to the current date. I have never in my time at Noroff been tought how to build and use a calendar and I tried alot of different variations onliune, but nothing worked and the last one I implemented was one that was provided to my be a teacher. So I didn't manage to implement this feature correctly as I have never done it before and the docs on Ant Design was impossible to understand. So I did the next best thing, and that is what you can see on the venue details page.
 
-## Learn More
+I also had lots of issues trying to host the website on Netlify or Github pages. I tried to follow a guide from Noroff from js-frameworks on how to host on netlify but it didn't work.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can list a the tech stack that you've used over here
 
-### Code Splitting
+- [React.js](https://reactjs.org/)
+- [Fontawsome](fontawsome.com)
+- CSS
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## How to set up locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To set up and test out the website locally on your desktop, click the code-button and open the project with gitthub desktop. Then you clone the project to your pc and open it up in VsCode or another coding app your use. You might need to do "npm i", before you can view the website locally in your browser. After that you just type and execute "npm run dev" and then click the localhost link that you get in the terminal.
 
-### Making a Progressive Web App
+Once the website is up in your browser, you need to register first. You can only register by using a @stud.noroff.no email. You don't need an official one, so feelfree to create your own. When you register you can choose to be a venue manager or not, by ticking the box for that in the register form. You can also change your role once you are logged in, by going to your profile page and press update venuemanager button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Links
 
-### Advanced Configuration
+Prototypes:
+iPad - https://xd.adobe.com/view/f189cb20-369a-4fdc-8120-7babfc10e468-a4da/
+phone - https://xd.adobe.com/view/9e98636e-e487-4f4c-86e1-ddfff4d5ddb2-cbcb/
+desktop - https://xd.adobe.com/view/0d88e179-c880-491c-a2de-25361bba13ef-58db/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+style guide - https://xd.adobe.com/view/b1a6dae5-e3ce-4837-8bee-72844e3fc460-e4f5/
 
-### Deployment
+Gantt chart - https://trello.com/b/RQoZEvgG/holidaze-project-exam-2
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Kanban board - https://xd.adobe.com/view/fc330ee0-e56b-45b8-9cf4-342b5cf5776b-a960/
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# portfolio_2
+[email address](audunroald@gmail.com)
