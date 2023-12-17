@@ -33,3 +33,21 @@
   font-size: 3rem;
   text-transform: uppercase;
 }
+
+@media (min-width: 380px) {
+  .contactme_hero_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactme_section,
+  .contactme_hero_section {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .contactme_hero_section {
+    flex-direction: row;
+  }
+}

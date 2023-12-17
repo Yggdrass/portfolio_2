@@ -5,6 +5,7 @@ import profile_image from "../../assets/ar_profile_img.jpg";
 import ArtAuctionsCard from "../../components/project_cards/ArtAuctionsCard";
 import ShopHubCard from "../../components/project_cards/ShopHubCard";
 import "./Home.css";
+import Footer from "../../components/layout/Footer";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
           <ArtAuctionsCard />
         </div>
       </main>
+      <Footer />
     </>
   );
 };

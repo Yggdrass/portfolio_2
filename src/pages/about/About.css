@@ -33,3 +33,21 @@
 .aboutme_section {
   margin-left: 10rem;
 }
+
+@media (min-width: 380px) {
+  .aboutme_hero_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutme_section,
+  .aboutme_hero_section {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .aboutme_hero_section {
+    flex-direction: row;
+  }
+}

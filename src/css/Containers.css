@@ -20,3 +20,10 @@
   flex-direction: column;
   gap: 3rem;
 }
+
+@media (min-width: 380px) {
+  .quote_container {
+    align-items: center;
+    margin: 1rem;
+  }
+}

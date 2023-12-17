@@ -7,6 +7,7 @@ import HolidazeVenuesBookings from "../../assets/holidaze/profile_page_venues_bo
 import "./Projects.css";
 import DividingLineTop from "../../components/layout/DividingLineTop";
 import DividingLineSection from "../../components/layout/DividingLineSection";
+import Footer from "../../components/layout/Footer";
 
 const Holidaze = () => {
   return (
@@ -111,6 +112,7 @@ const Holidaze = () => {
           />
         </div>
       </main>
+      <Footer />
     </>
   );
 };

@@ -2,6 +2,7 @@ import DividingLineTop from "../../components/layout/DividingLineTop";
 import Header from "../../components/layout/Header";
 import email_image from "../../assets/email_image.jpg";
 import "./Contact.css";
+import Footer from "../../components/layout/Footer";
 
 const Contact = () => {
   return (
@@ -32,6 +33,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
